@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon"  href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  
+  <style>
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-repeat: no-repeat;
+    }
+    #container{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 400px;
+      border-radius: 15px;
+      height: 650px;
+      background-color: white;
+      box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+    #illhero{
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      width: 400px;
+      height: 35%;
+    }
+    #ordersum{
+      text-align: center;
+      margin: 30px 0px 0px 0px;
+    }
+    #os{
+      font-size: 25px;
+      font-weight: 700;
+      text-shadow: 50px;
+      padding-bottom: 1px;
+    }
+    #os,#content{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #plan{
+    display: flex;
+    background: transparent;
+    align-items: center;
+    background-color: #8c8dcf9c;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   #ap{
+    margin-right: 80px;
+    margin-left: 15px;
+   }
+   #apm{
+    font-weight: 600;
+   }
+  #price{
+    margin-top: 10px;
+  }
+  #change:hover{
+    text-decoration: none;
+  }
+  #accept{
+    display: flex;
+    flex-direction: column;
+
+  }
+  button{
+    background-color: blue;
+    border-radius: 15px;
+    width: 350px;
+    height: 45px;
+    margin-top: 30px;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.05);
+    color: white;
+    font-weight: 700;
+    font-size: medium;
+    border: none;
+  }
+  button:hover{
+    background-color: rgb(81, 81, 182);
+    cursor: pointer;
+  }
+  #co{
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #co:hover{
+    font-weight: 500;
+    color: black;
+    translate: scale(1.5);
+    transition: s ease;
+  }
+  .attribution{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  @media(max-width:768px){
+    #container{
+      width: 80%;
+    }
+    #illhero{
+      width: 100%;
+    }
+    #plan,button{
+      width: 90%;
+    }
+    #ap{
+      margin-right: 50px;
+      margin-left: 0px;
+    }
+  }
+  </style>
+</head>
+<body background="Screenshot_15-8-2024_205320_.jpeg">
+<div id="container">
+    <img id="illhero" src="Screenshot_15-8-2024_213240_.jpeg" >
+    <div id="ordersum">
+      <p id="os">Order Summary</p>
+      <p id="content">You can now listen to millions of songs, <br>audiobooks, and podcasts on any 
+      <br>  device anywhere you like!</p>
+    </div>  
+      <div id="plan">
+        <svg  id="musicicon" xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#DFE6FB"/><path fill="#717FA6" fill-rule="nonzero" d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"/></g></svg>
+        <p id="ap"> <span id="apm">Annual Plan</span> <br> 
+          <span id="price">$59.99/year</span></p>
+          <a href="" id="change">Change</a>
+      </div>
+      <div id="accept">
+        <button> Proceed to Payment</button> 
+        <a href="" id="co">Cancel Order</a>
+      </div>
+    </div>
+</div>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+  Coded by <a href="#">Abdullah Mohamed</a>
+  </div>
+</body>
+</html>
